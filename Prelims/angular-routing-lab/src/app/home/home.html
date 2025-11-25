@@ -1,0 +1,135 @@
+<style>
+.homepage-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 80px 50px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.content-left {
+  flex: 1;
+  max-width: 50%;
+  padding-right: 50px;
+  z-index: 2;
+}
+
+.content-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 50%;
+  z-index: 2;
+}
+
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 3.8em;
+  text-align: left;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+.pre-heading {
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #e74c3c;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  font-size: 1.1em;
+  margin: 10px 0;
+  color: #7f8c8d;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.section-description {
+  margin-top: 20px;
+  font-size: 1em;
+  color: #34495e;
+  border-top: 1px solid #ecf0f1;
+  padding-top: 20px;
+}
+
+.image-wrapper {
+  padding: 0;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0;
+  box-shadow: none;
+  transform: scale(1.05);
+}
+
+.wave-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to top, rgba(236, 240, 241, 0.5) 0%, transparent 100%);
+}
+
+.btn-primary {
+  background-color: #e74c3c;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #c0392b;
+}
+
+.inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+</style>
+
+
+<div class="homepage-layout">
+
+  <div class="inner">
+    <div class="content-left">
+      <p class="pre-heading">6AWEB</p>
+      <h1>{{message}}</h1>
+
+      <p>Hello Im, {{name}}</p>
+      <p>Section:{{section}} </p>
+
+      <section class="section-description">
+        <p>This activity Showcases Data Binding, its types and applications in various scenarios</p>
+      </section>
+    </div>
+  </div>
+
+</div>
